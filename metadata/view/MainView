@@ -1,0 +1,825 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "layout": "border"
+    },
+    "designerId": "353f0c49-9162-4dc5-8e2d-ffb09f0d3a62",
+    "cn": [
+        {
+            "type": "Ext.container.Container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 100,
+                "html": [
+                    "<h1>VEC Framework Components</h1>"
+                ],
+                "layout|region": "north"
+            },
+            "designerId": "04900c91-92c8-468f-90bd-bd054a49112d"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "menuPanel",
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "Examples",
+                "width": 150
+            },
+            "designerId": "70e4bdc2-8c21-4da3-b357-bdac73847e65",
+            "cn": [
+                {
+                    "type": "Ext.tree.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "animate": true,
+                        "border": false,
+                        "collapsed": false,
+                        "collapsible": false,
+                        "header": false,
+                        "hideHeaders": true,
+                        "overlapHeader": false,
+                        "root": [
+                            "{\r",
+                            "    expanded: true,\r",
+                            "    children: [\r",
+                            "        { text: \"Panels\", expanded: true, children: [\r",
+                            "            { text: \"Basic Panel\", leaf: true }\r",
+                            "        ] },\r",
+                            "        { text: \"Buttons\", expanded: true, children: [\r",
+                            "            { text: \"Primary Buttons\", leaf: true },\r",
+                            "            { text: \"Secundary Buttons\", leaf: true },\r",
+                            "            { text: \"Tertiary Buttons\", leaf: true },\r",
+                            "            { text: \"Main Menu Buttons\", leaf: true },\r",
+                            "            { text: \"Menu Buttons\", leaf: true },\r",
+                            "        ] },\r",
+                            "        { text: \"Toolbars\", expanded: true, children: [\r",
+                            "            { text: \"Docked Toolbar\", leaf: true }\r",
+                            "        ] },\r",
+                            "        { text: \"Tabs\", expanded: true, children: [\r",
+                            "            { text: \"Basic Tabs\", leaf: true }\r",
+                            "        ] },\r",
+                            "        { text: \"Windows\", expanded: true, children: [\r",
+                            "            { text: \"Basic Window\", leaf: true }\r",
+                            "        ] },\r",
+                            "        { text: \"Forms\", expanded: true, children: [\r",
+                            "            { text: \"Form Elements\", leaf: true }\r",
+                            "        ] }\r",
+                            "    ]\r",
+                            "}"
+                        ],
+                        "rootVisible": false,
+                        "title": "Examples",
+                        "useArrows": true,
+                        "width": 150
+                    },
+                    "designerId": "97d059a9-8abd-4c07-8a61-ae5d80f0b246",
+                    "cn": [
+                        {
+                            "type": "Ext.tree.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "data": null
+                            },
+                            "designerId": "ee944a02-d4c3-4964-89d3-899c651c021e",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onViewItemClick",
+                                        "implHandler": [
+                                            "//console.log(index);\r",
+                                            "var content = Ext.getCmp('contentPanel');\r",
+                                            "var activeItem = 0;\r",
+                                            "switch(index)\r",
+                                            "{\r",
+                                            "    case 1:\r",
+                                            "      activeItem = 0;\r",
+                                            "      break;\r",
+                                            "    case 3:\r",
+                                            "      activeItem = 1;\r",
+                                            "      break;\r",
+                                            "    case 4:\r",
+                                            "      activeItem = 2;\r",
+                                            "      break;\r",
+                                            "    case 5:\r",
+                                            "      activeItem = 3;\r",
+                                            "      break;\r",
+                                            "    case 6:\r",
+                                            "      activeItem = 4;\r",
+                                            "      break;\r",
+                                            "    case 7:\r",
+                                            "      activeItem = 5;\r",
+                                            "      break;\r",
+                                            "    case 9:\r",
+                                            "      activeItem = 6;\r",
+                                            "      break;\r",
+                                            "    case 11:\r",
+                                            "      activeItem = 7;\r",
+                                            "      break;\r",
+                                            "    case 13:\r",
+                                            "      activeItem = 8;\r",
+                                            "      break;\r",
+                                            "    case 15:\r",
+                                            "      activeItem = 9;\r",
+                                            "      break;\r",
+                                            "}\r",
+                                            "\r",
+                                            "content.layout.setActiveItem(activeItem);"
+                                        ],
+                                        "name": "itemclick",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "452e7071-4be3-4769-8432-e2d828dfeef2"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "contentPanel",
+                "itemId": "contentPanel",
+                "layout": "card",
+                "layout|region": "center",
+                "title": null
+            },
+            "designerId": "c98c4f91-6f66-4054-8e31-2ccc2ab4f975",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "itemId": "basicPanel",
+                        "layout": "vbox",
+                        "title": "Basic Panel",
+                        "width": null
+                    },
+                    "designerId": "6e0310e2-3829-40e2-acea-c3d80afea341",
+                    "cn": [
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 100,
+                                "html": [
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                ],
+                                "layout|flex": 1,
+                                "title": "My Panel",
+                                "width": 350
+                            },
+                            "designerId": "03e17594-f629-40c4-954e-c69cee384aa2"
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 100,
+                                "html": [
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                ],
+                                "title": "My Panel",
+                                "width": 350
+                            },
+                            "designerId": "29b3bf21-1058-4d15-88c4-7322f9bb5aa7"
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 100,
+                                "html": [
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                ],
+                                "title": "My Panel",
+                                "width": 350
+                            },
+                            "designerId": "832427ed-ba54-4e0d-8167-fc79b5d4a177"
+                        },
+                        {
+                            "type": "Ext.panel.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 100,
+                                "html": [
+                                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                                ],
+                                "title": "My Panel",
+                                "width": 350
+                            },
+                            "designerId": "b229246a-3a6d-4cd8-9f2f-60f4dfa40ea4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "itemId": "primaryButtons",
+                        "layout": "hbox",
+                        "title": "Primary Buttons"
+                    },
+                    "designerId": "daf95a82-9e4f-4afd-b806-c2cc1b902fad",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "disabled",
+                                "fieldLabel": "Label",
+                                "hideLabel": true
+                            },
+                            "designerId": "06aea830-bea4-4702-96b5-850694462b91",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onCheckboxfieldChange",
+                                        "implHandler": [
+                                            "//console.log(field.checked);\r",
+                                            "var btone = Ext.getCmp('btn_one');\r",
+                                            "var bttwo = Ext.getCmp('btn_two');\r",
+                                            "var btthree = Ext.getCmp('btn_three');\r",
+                                            "if(field.checked===true){\r",
+                                            "    btone.setDisabled(true);\r",
+                                            "    bttwo.setDisabled(true);\r",
+                                            "    btthree.setDisabled(true);\r",
+                                            "}else{\r",
+                                            "    btone.setDisabled(false);\r",
+                                            "    bttwo.setDisabled(false);\r",
+                                            "    btthree.setDisabled(false);\r",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "01e01c2d-6e42-4ef4-8c96-5897bc09cb8c"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_one",
+                                "text": "Checkout"
+                            },
+                            "designerId": "ebcc8ba6-200c-45b1-9a58-ce85946fc851"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_two",
+                                "text": "See Details"
+                            },
+                            "designerId": "87a26897-e3ee-466e-b5c4-43b808ce5f24"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_three",
+                                "text": "find all links"
+                            },
+                            "designerId": "9bfd1f28-d10b-4f74-8595-e727af72cdff"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "itemId": "secundaryButtons",
+                        "layout": "hbox",
+                        "title": "Secundary Buttons",
+                        "width": 100
+                    },
+                    "designerId": "0e357956-2c1e-4594-821b-71902c2e148e",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "disabled",
+                                "fieldLabel": "Label",
+                                "hideLabel": true
+                            },
+                            "designerId": "5347550d-cf0f-4de0-ae68-0f53b673e2be",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onCheckboxfieldChange1",
+                                        "implHandler": [
+                                            "//console.log(field.checked);\r",
+                                            "var btone = Ext.getCmp('btn_one1');\r",
+                                            "var bttwo = Ext.getCmp('btn_two1');\r",
+                                            "var btthree = Ext.getCmp('btn_three1');\r",
+                                            "if(field.checked===true){\r",
+                                            "    btone.setDisabled(true);\r",
+                                            "    bttwo.setDisabled(true);\r",
+                                            "    btthree.setDisabled(true);\r",
+                                            "}else{\r",
+                                            "    btone.setDisabled(false);\r",
+                                            "    bttwo.setDisabled(false);\r",
+                                            "    btthree.setDisabled(false);\r",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "819fdf2b-3ad9-4b45-adc0-20b4e512e89e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_one1",
+                                "text": "Checkout",
+                                "width": 100
+                            },
+                            "designerId": "66cd4500-d290-499a-805c-0e8b0a91d582"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_two1",
+                                "text": "See Details",
+                                "width": 150
+                            },
+                            "designerId": "da700ec5-2db4-4f9d-ba65-2d0775d1d0d1"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": null,
+                                "id": "btn_three1",
+                                "text": "find all links"
+                            },
+                            "designerId": "9def4b85-104f-4ea9-84d5-8cd436eeab34"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "itemId": "tertiaryButtons",
+                        "layout": "hbox",
+                        "title": "Tertiary Buttons"
+                    },
+                    "designerId": "ef57663d-9437-4bbf-a078-edeab7aaad43",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "disabled",
+                                "fieldLabel": "Label",
+                                "hideLabel": true
+                            },
+                            "designerId": "a3f0ae61-b275-4095-9acc-e98015dce971",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onCheckboxfieldChange11",
+                                        "implHandler": [
+                                            "//console.log(field.checked);\r",
+                                            "var btone = Ext.getCmp('btn_one2');\r",
+                                            "var bttwo = Ext.getCmp('btn_two2');\r",
+                                            "var btthree = Ext.getCmp('btn_three2');\r",
+                                            "if(field.checked===true){\r",
+                                            "    btone.setDisabled(true);\r",
+                                            "    bttwo.setDisabled(true);\r",
+                                            "    btthree.setDisabled(true);\r",
+                                            "}else{\r",
+                                            "    btone.setDisabled(false);\r",
+                                            "    bttwo.setDisabled(false);\r",
+                                            "    btthree.setDisabled(false);\r",
+                                            "}"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "67c3115b-12eb-41fa-a689-4151011b9811"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_one2",
+                                "text": "Checkout"
+                            },
+                            "designerId": "6396c5c1-ea87-4c26-b7de-d59f7800a060"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_two2",
+                                "text": "See Details"
+                            },
+                            "designerId": "fceef212-e096-4d86-a02e-ff5dd8414a6b"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "btn_three2",
+                                "text": "find all links"
+                            },
+                            "designerId": "a366524f-b23c-483f-8110-cf4a375ef63e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "mainMenuButtons",
+                        "layout": null,
+                        "title": "Main Menu Buttons"
+                    },
+                    "designerId": "f0f6367f-5c22-4f9d-8d78-8f9096b71c95",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Contact Us View"
+                            },
+                            "designerId": "58bc4816-8116-4578-beb0-59b848a97571"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "menuButtons",
+                        "layout": null,
+                        "title": "Menu Buttons"
+                    },
+                    "designerId": "5868ddbb-ed6a-41e6-bd3a-6a317d1fac95",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Contact Us View"
+                            },
+                            "designerId": "41a79bdd-258f-43df-865b-d026fd14b9df"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "dockedToolbar",
+                        "layout": null,
+                        "title": "Docked Toolbar"
+                    },
+                    "designerId": "56fdddb8-cdf4-4e12-91ce-6efedfdb1d48",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Contact Us View"
+                            },
+                            "designerId": "306391fa-5a93-4a8b-9818-97a68b816725"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|pack": "center",
+                        "itemId": "basicTabs",
+                        "layout": "hbox",
+                        "title": "Basic Tabs"
+                    },
+                    "designerId": "3b561195-d681-4a45-9897-e82961448ae7",
+                    "cn": [
+                        {
+                            "type": "Ext.tab.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "activeTab": 0,
+                                "width": 450
+                            },
+                            "designerId": "24edb203-4463-42e8-a7f8-243c2e1996fb",
+                            "cn": [
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": [
+                                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        ],
+                                        "title": "DESCRIPTION"
+                                    },
+                                    "designerId": "d8aafcb7-1b52-43b9-ab9e-08ed29517855",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "a7163fe3-02a3-42f5-820e-5ff21f482f0d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": [
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus neque, mollis id auctor eget, aliquet vel augue. Sed egestas fermentum tempus. Praesent hendrerit eros et enim laoreet suscipit. Nam diam ante, ullamcorper id congue non, accumsan non augue. Aliquam non libero augue, vitae molestie orci. Nulla ac enim nec velit rhoncus venenatis. Aenean orci quam, eleifend ut aliquam iaculis, pellentesque ut arcu. Suspendisse lobortis commodo magna, vitae sodales orci luctus vestibulum. Cras eget ipsum sapien, vel dapibus metus. Etiam sed augue sit amet massa commodo commodo. Nam pellentesque dapibus ipsum. Proin eget malesuada magna. Curabitur elit diam, pellentesque id fermentum eget, congue ultricies nibh. Nunc tincidunt sem at diam porta tincidunt. Suspendisse fringilla felis in lectus blandit vulputate. Suspendisse mollis ipsum nec ante congue ut porttitor nunc bibendum. Maecenas mollis sem non justo iaculis vitae consequat augue pulvinar. Sed aliquet malesuada lobortis. Maecenas malesuada eros sed erat ultricies eleifend. Nulla facilisi. Pellentesque pharetra molestie mollis. Aenean venenatis tempus urna, quis convallis quam cursus eget."
+                                        ],
+                                        "title": "DESIGN"
+                                    },
+                                    "designerId": "8d047df9-1b45-4b6e-bcf2-5d4c51ab677a",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "fefb88d9-1857-4dc0-9528-0b1b3eee8b6e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.panel.Panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "html": [
+                                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                        ],
+                                        "title": "MARKUP"
+                                    },
+                                    "designerId": "73eb56cd-557e-4990-9683-24204a4df343",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.tab.Tab",
+                                            "reference": {
+                                                "name": "tabConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "designerId": "cfac4d33-ae5b-4099-a236-e7d8c9f2583f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "basicWindows",
+                        "layout": null,
+                        "title": "Basic Windows"
+                    },
+                    "designerId": "6ef86a6b-ec63-4b51-aed6-e202b957f579"
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "itemId": "formElements",
+                        "layout": null,
+                        "title": "Form Elements"
+                    },
+                    "designerId": "e4cc0cec-7268-4d50-8495-2fec2c951bd9",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "bodyPadding": 10,
+                                "title": "My Form"
+                            },
+                            "designerId": "b4d77be0-c68e-445c-86c0-fb3183355b09"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
