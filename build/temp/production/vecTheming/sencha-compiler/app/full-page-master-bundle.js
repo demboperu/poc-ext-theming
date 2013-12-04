@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\sencha\vecTheming\app.js
+// @require /Applications/XAMPP/xamppfiles/htdocs/vec-ext-theming/app.js

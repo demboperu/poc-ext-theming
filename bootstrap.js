@@ -829,7 +829,6 @@ Ext.ClassManager.addNameAlternateMappings({
   ],
   "vecTheming.Application": [],
   "vecTheming.controller.Main": [],
-  "vecTheming.controller.Navigation": [],
   "vecTheming.view.Main": [],
   "vecTheming.view.MainView": [],
   "vecTheming.view.Viewport": []
@@ -1821,7 +1820,6 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "vecTheming.Application": [],
   "vecTheming.controller.Main": [],
-  "vecTheming.controller.Navigation": [],
   "vecTheming.view.Main": [
     "widget.app-main"
   ],
@@ -1830,6 +1828,7 @@ Ext.ClassManager.addNameAliasMappings({
 });
 Ext.setVersion("ext-theme-base", "4.2.1");
 Ext.setVersion("ext-theme-classic", "4.2.1");
+Ext.setVersion("ext-theme-classic-450fd22e-2ced-4ea8-a0a9-fd3ca285a62d", "1.0.0");
 Ext.setVersion("ext-theme-neutral", "4.2.1");
 /**
  * Sencha Blink - Development

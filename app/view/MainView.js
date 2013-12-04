@@ -30,13 +30,20 @@ Ext.define('vecTheming.view.MainView', {
                     xtype: 'container',
                     region: 'north',
                     height: 100,
-                    html: '<h1>VEC Framework Components</h1>'
+                    html: '<h1>VEC Framework Components</h1>',
+                    items: [
+                        {
+                            xtype: 'button',
+                            text: 'MyButton'
+                        }
+                    ]
                 },
                 {
                     xtype: 'panel',
                     region: 'west',
                     split: true,
                     itemId: 'menuPanel',
+                    ui: 'newpanel',
                     width: 150,
                     title: 'Examples',
                     items: [

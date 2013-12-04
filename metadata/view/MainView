@@ -27,7 +27,21 @@
                 ],
                 "layout|region": "north"
             },
-            "designerId": "04900c91-92c8-468f-90bd-bd054a49112d"
+            "designerId": "04900c91-92c8-468f-90bd-bd054a49112d",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "MyButton"
+                    },
+                    "designerId": "d5955767-6dea-4de9-b81b-678bad38d09d"
+                }
+            ]
         },
         {
             "type": "Ext.panel.Panel",
@@ -37,10 +51,12 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|uiInterfaceName": "newpanel",
                 "itemId": "menuPanel",
                 "layout|region": "west",
                 "layout|split": true,
                 "title": "Examples",
+                "ui": "newpanel",
                 "width": 150
             },
             "designerId": "70e4bdc2-8c21-4da3-b357-bdac73847e65",

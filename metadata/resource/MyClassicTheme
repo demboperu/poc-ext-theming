@@ -1,0 +1,72 @@
+{
+    "type": "classicthemeresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyClassicTheme"
+    },
+    "designerId": "450fd22e-2ced-4ea8-a0a9-fd3ca285a62d",
+    "storage": {
+        "needsCompile": false,
+        "nameIndex": 1,
+        "varData": {
+            "Ext.panel.Panel": {
+                "globalVars": [
+                    {
+                        "name": "panel-base-color",
+                        "enabled": true,
+                        "value": "rgba(34,37,41,1)"
+                    },
+                    {
+                        "name": "panel-body-color",
+                        "enabled": true,
+                        "value": "rgba(201,50,50,1)"
+                    }
+                ]
+            }
+        }
+    },
+    "cn": [
+        {
+            "type": "themescss",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "newPanel",
+                "implHandler": [
+                    "@include extjs-panel-ui(\r",
+                    "    $ui-label: 'newpanel',\r",
+                    "    $ui-header-background-color: red,\r",
+                    "    $ui-border-color: red,\r",
+                    "    $ui-header-border-color: red,\r",
+                    "    $ui-body-border-color: red,\r",
+                    "    $ui-border-width: 5px,\r",
+                    "    $ui-border-radius: 5px\r",
+                    ");"
+                ]
+            },
+            "designerId": "1fc6796b-97c3-475f-a0ec-88b60717b563"
+        },
+        {
+            "type": "themescss",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "Scss Resource",
+                "implHandler": [
+                    "//new"
+                ]
+            },
+            "designerId": "c0cde9b8-5b53-437a-b54c-2836591b1bcf"
+        }
+    ]
+}
